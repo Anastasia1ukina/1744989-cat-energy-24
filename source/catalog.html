@@ -7,7 +7,7 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="page__body page-header">
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
@@ -21,17 +21,17 @@
         </a>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="main-page" href="#">
+            <a class="main-page" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
+            <a href="form.html">
               Подбор программы
             </a>
           </li>
@@ -43,226 +43,280 @@
     <section class="product">
       <div class="product__wrapper">
         <h1 class="product__title">Каталог продукции</h1>
-        <ul class="product-list">
-          <li class="product-card">
-            <a class="product-card-link" href="product.html">
-              <div class="product-card-container">
-                <h3 class="product-card-title subtitle">Cat Energy PRO 500 г</h3>
-                <img class="product-card-image" src="#" alt="Cat Energy PRO 500 г" width="140" height="112">
-              </div>
-              <div class="product-card-title-link">
-                <div class="catalog__description">
-                  <span class="product-card-description">Масса</span>
-                  <span class="product-card-description">Вкус</span>
-                  <span class="product-card-description">Цена</span>
-                  <span class="product-card-description">500 г</span>
-                  <span class="product-card-description">Курица</span>
-                  <span class="product-card-description">700 Р.</span>
+        <ul class="product__list">
+          <li class="product__card">
+            <a class="product-card__link" href="product.html">
+              <div class="product-card__container">
+                <h3 class="product-card__title subtitle">Cat Energy PRO 500 г</h3>
+                <div class="product-card__image">
+                  <img class="product-card__image" src="#" alt="Cat Energy PRO 500 г" width="140" height="112">
                 </div>
-                <span class="product-card-button button">Заказать</span>
+              </div>
+              <div class="product__description product-card-title-link">
+                <table class="product-card__description">
+                  <tr>
+                    <td class="product__description product-card-description">Масса</td>
+                    <td class="product__description product-card-description">500 г</td>
+                  </tr>
+                  <tr>
+                    <td class="product__description product-card-description">Вкус</td>
+                    <td class="product__description product-card-description">Курица</td>
+                  </tr>
+                  <tr>
+                    <td class="product__description product-card-description">Цена</td>
+                    <td class="product__description product-card-description">700 Р.</td>
+                  </tr>
+                </table>
+                <a class="product-card-button button" href="#">Заказать</a>
               </div>
             </a>
           </li>
           <li class="product-card">
-            <a class="product-card-link" href="product.html">
-              <div class="product-card-container">
-                <h3 class="product-card-title subtitle">Cat Energy PRO 1000 г</h3>
-                <img class="product-card-image" src="#" alt="Cat Energy PRO 1000 г" width="140" height="112">
-              </div>
-              <div class="product-card-title-link">
-                <div class="catalog__description">
-                  <span class="product-card-description">Масса</span>
-                  <span class="product-card-description">Вкус</span>
-                  <span class="product-card-description">Цена</span>
-                  <span class="product-card-description">1000 г</span>
-                  <span class="product-card-description">Курица</span>
-                  <span class="product-card-description">1000 Р.</span>
+            <a class="product-card__link" href="product.html">
+              <div class="product-card__container">
+                <h3 class="product-card__title subtitle">Cat Energy PRO 1000 г</h3>
+                <div class="product-card__image">
+                  <img class="product-card__image" src="#" alt="Cat Energy PRO 1000 г" width="140" height="112">
                 </div>
-                <span class="product-card-button button">Заказать</span>
+              </div>
+              <div class="product-card-title__link">
+                <table class="product-card__description">
+                  <tr>
+                    <td class="product-card__description">Масса</td>
+                    <td class="product-card__description">1000 г</td>
+                  </tr>
+                  <tr>
+                    <td class="product-card__description">Вкус</td>
+                    <td class="product-card__description">Курица</td>
+                  </tr>
+                  <tr>
+                    <td class="product-card__description">Цена</td>
+                    <td class="product-card__description">1000 Р.</td>
+                  </tr>
+                </table>
+                <a class="product-card__button button" href="#">Заказать</a>
               </div>
             </a>
           </li>
           <li class="product-card">
-            <a class="product-card-link" href="product.html">
-              <div class="product-card-container">
-                <h3 class="product-card-title subtitle">Cat Energy PRO 500 г</h3>
-                <img class="product-card-image" src="#" alt="Cat Energy PRO 500 г" width="140" height="112">
-              </div>
-              <div class="product-card-title-link">
-                <div class="catalog__description">
-                  <span class="product-card-description">Масса</span>
-                  <span class="product-card-description">Вкус</span>
-                  <span class="product-card-description">Цена</span>
-                  <span class="product-card-description">500 г</span>
-                  <span class="product-card-description">Рыба</span>
-                  <span class="product-card-description">700 Р.</span>
+            <a class="product-card__link" href="product.html">
+              <div class="product-card__container">
+                <h3 class="product-card__title subtitle">Cat Energy PRO 500 г</h3>
+                <div class="product-card__image">
+                <img class="product-card__image" src="#" alt="Cat Energy PRO 500 г" width="140" height="112">
                 </div>
-                <span class="product-card-button button">Заказать</span>
+              </div>
+              <div class="product-card-title__link">
+                <table class="product-card__description">
+                  <tr>
+                    <td class="product-card__description">Масса</td>
+                    <td class="product-card__description">500 г</td>
+                  </tr>
+                  <tr>
+                    <td class="product-card__description">Вкус</td>
+                    <td class="product-card__description">Рыба</td>
+                  </tr>
+                  <tr>
+                    <td class="product-card__description">Цена</td>
+                    <td class="product-card__description">700 Р.</td>
+                  </tr>
+                </table>
+                <a class="product-card__button button" href="#">Заказать</a>
               </div>
             </a>
           </li>
           <li class="product-card">
-            <a class="product-card-link" href="product.html">
-              <div class="product-card-container">
-                <h3 class="product-card-title subtitle">Cat Energy PRO 1000 г</h3>
-                <img class="product-card-image" src="#" alt="Cat Energy PRO 1000 г" width="140" height="112">
-              </div>
-              <div class="product-card-title-link">
-                <div class="catalog__description">
-                  <span class="product-card-description">Масса</span>
-                  <span class="product-card-description">Вкус</span>
-                  <span class="product-card-description">Цена</span>
-                  <span class="product-card-description">1000 г</span>
-                  <span class="product-card-description">Рыба</span>
-                  <span class="product-card-description">1000 Р.</span>
+            <a class="product-card__link" href="product.html">
+              <div class="product-card__container">
+                <h3 class="product-card__title subtitle">Cat Energy PRO 1000 г</h3>
+                <div class="product-card__image">
+                <img class="product-card__image" src="#" alt="Cat Energy PRO 1000 г" width="140" height="112">
                 </div>
-                <span class="product-card-button button">Заказать</span>
+              </div>
+              <div class="product-card-title__link">
+                <table class="product-card__description">
+                  <tr>
+                    <td class="product-card__description">Масса</td>
+                    <td class="product-card__description">1000 г</td>
+                  </tr>
+                  <tr>
+                    <td class="product-card__description">Вкус</td>
+                    <td class="product-card__description">Рыба</td>
+                  </tr>
+                  <tr>
+                    <td class="product-card__description">Цена</td>
+                    <td class="product-card__description">1000 Р.</td>
+                  </tr>
+                </table>
+                <a class="product-card__button button" href="#">Заказать</a>
               </div>
             </a>
           </li>
           <li class="product-card">
-            <a class="product-card-link" href="product.html">
-              <div class="product-card-container">
-                <h3 class="product-card-title subtitle">Cat Energy slim 500 г</h3>
-                <img class="product-card-image" src="#" alt="Cat Energy slim 500 г" width="140" height="112">
+            <a class="product-card__link" href="product.html">
+              <div class="product-card__container">
+                <h3 class="product-card__title subtitle">Cat Energy slim 500 г</h3>
+                <div class="product-card__image">
+                <img class="product-card__image" src="#" alt="Cat Energy slim 500 г" width="140" height="112">
               </div>
-              <div class="product-card-title-link">
-                <div class="catalog__description">
-                  <span class="product-card-description">Масса</span>
-                  <span class="product-card-description">Вкус</span>
-                  <span class="product-card-description">Цена</span>
-                  <span class="product-card-description">500 г</span>
-                  <span class="product-card-description">Гречка</span>
-                  <span class="product-card-description">400 Р.</span>
-                </div>
-                <span class="product-card-button button">Заказать</span>
               </div>
-            </a>
-          </li>
-          <li class="product-card">
-            <a class="product-card-link" href="product.html">
-              <div class="product-card-container">
-                <h3 class="product-card-title subtitle">Cat Energy slim 500 г</h3>
-                <img class="product-card-image" src="#" alt="Cat Energy slim 1000 г" width="140" height="112">
-              </div>
-              <div class="product-card-title-link">
-                <div class="catalog__description">
-                  <span class="product-card-description">Масса</span>
-                  <span class="product-card-description">Вкус</span>
-                  <span class="product-card-description">Цена</span>
-                  <span class="product-card-description">1000 г</span>
-                  <span class="product-card-description">Гречка</span>
-                  <span class="product-card-description">700 Р.</span>
-                </div>
-                <span class="product-card-button button">Заказать</span>
+              <div class="product-card-title__link">
+                <table class="product-card__description">
+                  <tr>
+                    <td class="product-card__description">Масса</td>
+                    <td class="product-card__description">500 г</td>
+                  </tr>
+                  <tr>
+                    <td class="product-card__description">Вкус</td>
+                    <td class="product-card__description">Гречка</td>
+                  </tr>
+                  <tr>
+                    <td class="product-card__description">Цена</td>
+                    <td class="product-card__description">400 Р.</td>
+                  </tr>
+                </table>
+                <a class="product-card__button button" href="#">Заказать</a>
               </div>
             </a>
           </li>
           <li class="product-card">
-            <a class="product-card-link" href="product.html">
-              <div class="product-card-container">
-                <h3 class="product-card-title subtitle">Cat Energy slim 500 г</h3>
-                <img class="product-card-image" src="#" alt="Cat Energy slim 500 г" width="140" height="112">
-              </div>
-              <div class="product-card-title-link">
-                <div class="catalog__description">
-                  <span class="product-card-description">Масса</span>
-                  <span class="product-card-description">Вкус</span>
-                  <span class="product-card-description">Цена</span>
-                  <span class="product-card-description">500 г</span>
-                  <span class="product-card-description">Рис</span>
-                  <span class="product-card-description">500 Р.</span>
+            <a class="product-card__link" href="product.html">
+              <div class="product-card__container">
+                <h3 class="product-card__title subtitle">Cat Energy slim 500 г</h3>
+                <div class="product-card__image">
+                <img class="product-card__image" src="#" alt="Cat Energy slim 1000 г" width="140" height="112">
                 </div>
-                <span class="product-card-button button">Заказать</span>
+              </div>
+              <div class="product-card-title__link">
+                <table class="product-card__description">
+                  <tr>
+                    <td class="product-card__description">Масса</td>
+                    <td class="product-card__description">1000 г</td>
+                  </tr>
+                  <tr>
+                    <td class="product-card__description">Вкус</td>
+                    <td class="product-card__description">Гречка</td>
+                  </tr>
+                  <tr>
+                    <td class="product-card__description">Цена</td>
+                    <td class="product-card__description">700 Р.</td>
+                  </tr>
+                </table>
+                <a class="product-card__button button" href="#">Заказать</a>
               </div>
             </a>
           </li>
           <li class="product-card">
-            <a class="product-card-link" href="product.html">
-              <div class="product-card-container">
+            <a class="product-car__link" href="product.html">
+              <div class="product-card__container">
+                <h3 class="product-card__title subtitle">Cat Energy slim 500 г</h3>
+                <div class="product-card__image">
+                <img class="product-card__image" src="#" alt="Cat Energy slim 500 г" width="140" height="112">
+                </div>
+              </div>
+              <div class="product-card-title__link">
+                <table class="product-card__description">
+                  <tr>
+                    <td class="product-card__description">Масса</td>
+                    <td class="product-card__description">500 г</td>
+                  </tr>
+                  <tr>
+                    <td class="product-card__description">Вкус</td>
+                    <td class="product-card__description">Рис</td>
+                  </tr>
+                  <tr>
+                    <td class="product-card__description">Цена</td>
+                    <td class="product-card__description">500 Р.</td>
+                  </tr>
+                </table>
+                <a class="product-card__button button" href="#">Заказать</a>
+              </div>
+            </a>
+          </li>
+          <li class="product-card">
+            <a class="product-card__link" href="product.html">
+              <div class="product-card__container">
                 <!-- <svg></svg> -->
-                <h3 class="product-card-title subtitle">Показать еще 100500 товаров</h3>
-                <span class="product-card-description">На самом деле вкусов гораздо больше!</span>
+                <h3 class="product-card__title subtitle product__card--last">Показать еще 100500 товаров</h3>
+                <p class="product-card__description">На самом деле вкусов гораздо больше!</p>
               </div>
-              <span class="product-card-button--all button">Показать все</span>
+              <span class="product-card__button--all button">Показать все</span>
             </a>
           </li>
         </ul>
       </div>
     </section>
 
-    <div class="additional-goods-and-present">
       <section class="additional-goods">
         <div class="additional-goods__wrapper">
           <h2 class="additional-goods__title">Дополнительные товары</h2>
-          <ul class="additional-goods-list">
-            <li class="additional-goods-card">
+          <ul class="additional-goods__list">
+            <li class="additional-goods__card">
               <a class="additional-goods-link" href="product.html">
                 <div class="additional-goods-container">
-                  <h3 class="additional-goods-title subtitle">Сахарозаменитель</h3>
+                  <h3 class="additional-goods__title subtitle">Сахарозаменитель</h3>
                 </div>
-                <div class="additional-goods-link">
+                <div class="additional-goods__link">
                   <div class="additional-goods__description">
-                    <span class="product-card-description">1 упаковка (100 г)</span>
-                    <span class="product-card-description">200 Р.</span>
+                    <span class="product-card__description">1 упаковка (100 г)</span>
+                    <span class="product-card__description">200 Р.</span>
                   </div>
-                  <span class="product-card-button button">Заказать</span>
+                  <a class="product-card__button button" href="#">Заказать</a>
                 </div>
               </a>
             </li>
-            <li class="additional-goods-card">
-              <a class="additional-goods-link" href="product.html">
-                <div class="additional-goods-container">
-                  <h3 class="additional-goods-title subtitle">Питьевая вода</h3>
+            <li class="additional-goods__card">
+              <a class="additional-goods__link" href="product.html">
+                <div class="additional-goods__container">
+                  <h3 class="additional-goods__title subtitle">Питьевая вода</h3>
                 </div>
-                <div class="additional-goods-link">
+                <div class="additional-goods__link">
                   <div class="additional-goods__description">
-                    <span class="product-card-description">5 литров</span>
-                    <span class="product-card-description">50 Р.</span>
+                    <span class="product-card__description">5 литров</span>
+                    <span class="product-card__description">50 Р.</span>
                   </div>
-                  <span class="product-card-button button">Заказать</span>
+                  <a class="product-card__button button" href="#">Заказать</a>
                 </div>
               </a>
             </li>
-            <li class="additional-goods-card">
-              <a class="additional-goods-link" href="product.html">
-                <div class="additional-goods-container">
-                  <h3 class="additional-goods-title subtitle">Молоко</h3>
+            <li class="additional-goods__card">
+              <a class="additional-goods__link" href="product.html">
+                <div class="additional-goods__container">
+                  <h3 class="additional-goods__title subtitle">Молоко</h3>
                 </div>
-                <div class="additional-goods-link">
+                <div class="additional-goods__link">
                   <div class="additional-goods__description">
-                    <span class="product-card-description">1 литр</span>
-                    <span class="product-card-description">100 Р.</span>
+                    <span class="product-card__description">1 литр</span>
+                    <span class="product-card__description">100 Р.</span>
                   </div>
-                  <span class="product-card-button button">Заказать</span>
+                  <a class="product-card__button button" href="#">Заказать</a>
                 </div>
               </a>
             </li>
-            <li class="additional-goods-card">
-              <a class="additional-goods-link" href="product.html">
-                <div class="additional-goods-container">
-                  <h3 class="additional-goods-title subtitle">Витамины</h3>
+            <li class="additional-goods__card">
+              <a class="additional-goods__link" href="product.html">
+                <div class="additional-goods__container">
+                  <h3 class="additional-goods__title subtitle">Витамины</h3>
                 </div>
-                <div class="additional-goods-link">
+                <div class="additional-goods__link">
                   <div class="additional-goods__description">
-                    <span class="product-card-description">1 упаковка (30 г)</span>
-                    <span class="product-card-description">300 Р.</span>
+                    <span class="product-card__description">1 упаковка (30 г)</span>
+                    <span class="product-card__description">300 Р.</span>
                   </div>
-                  <span class="product-card-button button">Заказать</span>
+                  <a class="product-card__button button" href="#">Заказать</a>
                 </div>
               </a>
             </li>
           </ul>
         </div>
-      </section>
 
-      <section class="present">
-        <span class="present__Rectangle">
-          <img class="present__image" src="#" alt="Подарок для котика" width="280" height="290">
-        </span>
-        Закажите все и получите чехол для кота в подарок!
+        <div class="present">
+          <span class="present__Rectangle">
+            <img class="present__image" src="#" alt="Подарок для котика" width="280" height="290">
+          </span>
+          <p class="present__text">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
       </section>
-    </div>
   </main>
 
   <!-- Футер -->
@@ -281,7 +335,7 @@
     </section>
     <div class="page-footer__wrapper">
       <div class="page-footer__logo-text">
-        <a href="#">
+        <a href="index.html">
           <img class="page-footer__logo-image" src="img/svg/logo-text.svg" width="128" height="24"
             alt="Лого Кэт-энерджи Текст">
         </a>
