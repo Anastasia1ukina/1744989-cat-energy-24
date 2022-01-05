@@ -4,36 +4,29 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
-  <base href="https://htmlacademy-adaptive.github.io/1744989-cat-energy-24/4/">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body class="body">
-
-  <!-- Меню аналогично страницы каталога -->
   <header class="page-header">
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle" type="button">
+        <img src="../source/img/svg/icon-menu.svg" alt="icon menu">
+      </button>
       <div class="main-nav__wrapper">
-        <!-- Прописать href на внутренних страницах -->
-        <!-- Логотип ты будешь позже прописывать через тег picture, так что пока достаточного одной ссылки -->
-        <!-- <a href="index.html" class="page-header__logo site-list__item--active">
-          <img class="page-header__logo-image" src="img/svg/logo-mobile.svg" width="33" height="38" alt="Лого Кэт-энерджи">
-        </a> -->
         <a class="page-header__logo" href="index.html">
           <img class="page-header__logo-image" src="img/svg/logo-text.svg" width="101" height="18" alt="Лого Кэт-энерджи Текст">
         </a>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <!-- В ссылке на главную страницу не правильный класс -->
-            <!-- Добавь класс на ссылки -->
-            <!-- <a class="main-page" href="index.html"> -->
             <a class="site-list__link main-page" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item main-page">
-            <!-- На текущей странице ссылка пишется без href -->
-            <!-- <a href="catalog.html"> -->
             <a class="site-list__link main-page" href="catalog.html">
               Каталог продукции
             </a>
@@ -47,14 +40,11 @@
       </div>
     </nav>
   </header>
-
-  <!-- main можно без класса -->
-  <!-- <main class="main-form"> -->
   <main>
 
     <section class="form-title">
       <h1>Подбор программы</h1>
-      <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="form-title__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </section>
 
     <section class="form">
@@ -81,7 +71,7 @@
               <input class="form__input" type="text" id="age" name="age" placeholder="7">
             </div>
           </fieldset>
-<!-- проверка -->
+
           <fieldset class="form__fieldset">
             <ul class="form__fieldset-list form__fieldset-list--radio">
               <li class="form__fieldset-item">
@@ -224,5 +214,4 @@
     </div>
   </footer>
 </body>
-
 </html>
