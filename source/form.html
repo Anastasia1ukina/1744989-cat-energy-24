@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +44,7 @@
   <main>
 
     <section class="form-title">
-      <h1>Подбор программы</h1>
+      <h1 class="form-title__choose">Подбор программы</h1>
       <p class="form-title__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </section>
 
@@ -100,7 +101,7 @@
         </div>
 
         <fieldset class="form__fieldset">
-          <h2>Контактные данные (владельца кота)</h2>
+          <h2 class="form__contact">Контактные данные (владельца кота)</h2>
 
           <div class="form__container-contacts">
             <div class="form__group">
@@ -123,12 +124,12 @@
         </fieldset>
 
         <fieldset class="form__fieldset">
-          <h2>Комментарий</h2>
+          <h2 class="form__contact">Комментарий</h2>
           <textarea class="form__comment" rows="5" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
         <fieldset class="form__fieldset">
-          <h2>Дополнительно</h2>
+          <h2 class="form__contact">Дополнительно</h2>
 
           <ul class="form__fieldset-list form__fieldset-list--check">
             <li class="form__fieldset-item">
@@ -162,7 +163,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset-button">
           <button class="form__button button" type="submit">Отправить заявку</button>
           <p class="form__footnote">
             <sup>*</sup> — Обязательные поля

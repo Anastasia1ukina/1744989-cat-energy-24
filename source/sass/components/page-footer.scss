@@ -6,3 +6,10 @@
   line-height: 18px;
   color: #444444;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}

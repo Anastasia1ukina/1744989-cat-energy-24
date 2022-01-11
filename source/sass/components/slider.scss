@@ -1,5 +1,12 @@
 .slider__list {
+  display: flex;
   list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__list {
+    display: flex;
+  }
 }
 
 .slider__control {
@@ -11,4 +18,17 @@
   color: #000000;
   border: none;
   background-color: #eaeaea;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__control {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    background-color: #eaeaea;
+  }
 }

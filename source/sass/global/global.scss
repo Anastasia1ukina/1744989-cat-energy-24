@@ -69,6 +69,7 @@ p {
   background-color: #68b738;
   min-width: 244px;
   min-height: 54px;
+  max-width: 280px;
   cursor: pointer;
   color: #ffffff;
   font-family: inherit;
@@ -76,4 +77,5 @@ p {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
+  display: block;
 }

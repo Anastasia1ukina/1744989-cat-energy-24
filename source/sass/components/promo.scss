@@ -1,15 +1,27 @@
-.promo {
-  background-color: rgba(104, 183, 56, 0.85);
+.promo__descript {
+  background: rgba(104, 183, 56, 0.85);
 }
 
-.promo__wrapper {
-  background-color: rgba(104, 183, 56, 0.85);
+@media (min-width: $tablet-width) {
+  .promo__descript {
+    background: none;
+  }
 }
 
 .promo__title {
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__title {
+    width: 414px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    margin-left: 120px;
+  }
 }
 
 .promo__intro {
@@ -22,6 +34,15 @@
   color: #ffffff;
 }
 
+@media (min-width: $tablet-width) {
+  .promo__intro {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    margin-left: 120px;
+  }
+}
+
 .promo__button {
   font-family: inherit;
   font-size: 14px;
@@ -29,4 +50,47 @@
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
+  min-width: 280px;
+  text-align: center;
+  min-height: 40px;
+  padding-top: 7px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__button {
+    width: 244px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 14px;
+    margin-left: 120px;
+  }
+}
+
+.promo__img {
+  width: 280px;
+  height: 270px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__img {
+    width: 710px;
+    height: 610px;
+    background-size: cover;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo__wrapper {
+    width: 708px;
+    height: 610px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }

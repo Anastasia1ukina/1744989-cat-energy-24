@@ -5,6 +5,13 @@
   line-height: 37px;
 }
 
+@media (min-width: $tablet-width) {
+  .program__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
 .program__link {
   text-decoration: none;
   font-size: 16px;
@@ -14,6 +21,39 @@
   color: #000000;
 }
 
+@media (min-width: $tablet-width) {
+  .program__link {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
 .program__list {
   list-style-type: none;
+}
+
+@media (min-width: $desktop-width) {
+  .program__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program__description {
+    line-height: 24px;
+    color: #000000;
+  }
+}
+
+.program__item {
+  background-color: #f2f2f2;
+}
+
+@media (min-width: $desktop-width) {
+  .program__item {
+    width: 570px;
+  }
 }

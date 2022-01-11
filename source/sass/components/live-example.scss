@@ -2,9 +2,36 @@
   background-color: #eaeaea;
 }
 
+@media (min-width: $tablet-width) {
+  .live-example {
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .live-example {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .live-example__title {
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .live-example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .live-example__description {
+    min-width: 708px;
+    line-height: 24px;
+  }
 }
