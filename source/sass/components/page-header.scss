@@ -10,14 +10,12 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .page-header--desktop {
     height: 696px;
-    background-image: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%),
-     url("../img/background-desktop-cat.jpg"), linear-gradient(to right, #ffffff 50%, #535259 50%);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
+    background-image: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%), url("../img/background-desktop-cat.jpg"), linear-gradient(to right, #ffffff 50%, #535259 50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
   }
 }
