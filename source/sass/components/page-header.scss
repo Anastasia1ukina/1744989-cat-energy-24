@@ -2,19 +2,22 @@
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-
-  // @media (min-width: $tablet-width) {
-  //   height: 950px;
-  // }
-
-  @media (min-width: $desktop-width) {
-    height: 776px;
-    background-color: rgba(104, 183, 56, 0.85);
-  }
 }
 
 @media (min-width: $tablet-width) {
   .page-header__logo {
     width: 170px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .page-header--desktop {
+    height: 696px;
+    background-image: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%),
+     url("../img/background-desktop-cat.jpg"), linear-gradient(to right, #ffffff 50%, #535259 50%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
   }
 }

@@ -1,5 +1,9 @@
 .promo__descript {
-  background: rgba(104, 183, 56, 0.85);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85),
+  rgba(104, 183, 56, 0.85)), url("../img/background-cat.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
 }
 
 @media (min-width: $tablet-width) {
@@ -81,10 +85,11 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .promo__wrapper {
-    width: 708px;
-    height: 610px;
+@media (min-width: $desktop-width) {
+  .promo__img {
+    width: 552px;
+    height: 500px;
+    background-size: cover;
   }
 }
 
