@@ -26,6 +26,18 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .site-list__link--form {
+    color: #000000;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link--catalog {
+    color: #000000;
+  }
+}
+
 .site-list {
   list-style: none;
   margin: 0;
@@ -43,5 +55,6 @@
 @media (min-width: $desktop-width) {
   .site-list {
     width: 780px;
+    padding-left: 25%;
   }
 }
