@@ -8,6 +8,34 @@
   color: #444444;
 }
 
+@media (min-width: $tablet-width) {
+  .form__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__fieldset-list {
+  list-style-type: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form__fieldset-list--check {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset-list--check {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 40px;
+    width: 1220px;
+  }
+}
+
 .form__control-label {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -31,27 +59,102 @@
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .form__input {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__fieldset {
+  border: none;
+}
+
+.form__fieldset-button {
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form__fieldset-button {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+  }
 }
 
 .form__comment {
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
   color: #444444;
 }
 
 .form__button {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  text-transform: uppercase;
-  color: #ffffff;
+  width: 280px;
+  min-height: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__button {
+    min-width: 280px;
+    min-height: 50px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__button {
+    min-width: 568px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__control-label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__contact {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__comment {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__group {
+  display: flex;
+}
+
+@media (min-width: $desktop-width) {
+  .form__container {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__container-contacts {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+  }
 }

@@ -14,4 +14,57 @@
 
 .product__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .product__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.product__card-button {
+  width: 280px;
+  min-height: 40px;
+  text-align: center;
+  padding-top: 8px;
+}
+
+@media (min-width: $tablet-width) {
+  .product__card-button {
+    width: 248px;
+    min-height: 40px;
+    text-align: center;
+    padding-top: 9px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product__card-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product__card-description {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
