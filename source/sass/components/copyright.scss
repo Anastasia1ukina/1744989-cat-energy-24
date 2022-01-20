@@ -7,3 +7,20 @@
   color: #444444;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    padding-right: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__text {
+    padding-top: 8px;
+  }
+}
+
+.copyright__link img {
+  width: 27px;
+  height: 34px;
+}

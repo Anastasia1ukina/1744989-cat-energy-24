@@ -2,12 +2,41 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin: 20px 20px 30px 20px;
 }
 
 @media (min-width: $tablet-width) {
   .work__title {
     font-size: 60px;
     line-height: 60px;
+    padding: 15px 0 72px 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .work__title {
+    padding: 70px 0 70px 0;
+  }
+}
+
+.work__rectangle {
+  background: #68b738;
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  margin-top: 0;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .work__rectangle {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
   }
 }
 
@@ -29,8 +58,8 @@
 @media (min-width: $desktop-width) {
   .work__list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 70px;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-column-gap: 80px;
   }
 }
 
@@ -41,23 +70,67 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  padding: 10px 20px;
 }
 
 @media (min-width: $tablet-width) {
   .work__item {
     font-size: 16px;
     line-height: 24px;
+    position: relative;
+    padding: 0;
   }
 }
 
 @media (min-width: $tablet-width) {
   .work__wrapper {
     width: 708px;
+    margin: 0 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .work__wrapper {
     width: 1220px;
+    margin: 0 110px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .work__item {
+    display: flex;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .work__number {
+    font-family: "Oswald", sans-serif;
+    font-size: 200px;
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .work__number {
+    position: absolute;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .work {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 104px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .work {
+    border: none;
+    padding-bottom: 0;
   }
 }

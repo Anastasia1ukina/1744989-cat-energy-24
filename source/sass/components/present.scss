@@ -1,5 +1,41 @@
 .present {
-  background: rgba(104, 183, 56, 0.85), url("/source/img/background-cat.jpg") center/cover;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-present.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  padding-top: 60px;
+  height: 290px;
+  text-align: center;
+  margin-top: 35px;
+}
+
+@media (min-width: $tablet-width) {
+  .present {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-present-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    height: 200px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .present {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-present-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    height: 290px;
+    margin-top: 0;
+    display: block;
+    width: 245px;
+    padding: 55px 0 0 0;
+    align-self: flex-end;
+  }
 }
 
 .present__text {
@@ -8,4 +44,30 @@
   font-weight: normal;
   font-size: 16px;
   color: #ffffff;
+  padding: 50px 60px 43px 60px;
+}
+
+@media (min-width: $tablet-width) {
+  .present__text {
+    padding: 70px 0;
+    width: 161px;
+    margin: 0 124px;
+    text-align: left;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .present__text {
+    margin: 0 40px;
+    text-align: center;
+    padding: 46px 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .present__rectangle {
+    padding: 0;
+    margin: 0 54px;
+  }
 }
