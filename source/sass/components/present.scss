@@ -1,40 +1,42 @@
 .present {
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-present.jpg");
+  background-image: linear-gradient(#68b738d9, #68b738d9), url("../img/jpg/cat-present.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
   padding-top: 60px;
   height: 290px;
   text-align: center;
-  margin-top: 35px;
+  max-width: 280px;
+  margin: 35px auto 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .present {
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-present-tablet.jpg");
+    background-image: linear-gradient(#68b738d9, #68b738d9), url("../img/jpg/cat-present-tablet.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
     height: 200px;
-    margin-top: 70px;
     display: flex;
     justify-content: space-between;
     padding: 0;
+    max-width: 708px;
+    margin: 70px auto 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .present {
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/cat-present-desktop.jpg");
+    background-image: linear-gradient(#68b738d9, #68b738d9), url("../img/jpg/cat-present-desktop.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
-    height: 290px;
-    margin-top: 0;
+    height: 288px;
     display: block;
     width: 245px;
     padding: 55px 0 0 0;
     align-self: flex-end;
+    margin: 0;
   }
 }
 
@@ -44,7 +46,7 @@
   font-weight: normal;
   font-size: 16px;
   color: #ffffff;
-  padding: 50px 60px 43px 60px;
+  padding: 50px 59px 43px 70px;
 }
 
 @media (min-width: $tablet-width) {
@@ -68,6 +70,13 @@
 @media (min-width: $tablet-width) {
   .present__rectangle {
     padding: 0;
-    margin: 0 54px;
+    margin: 57px 77px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .present__image {
+    width: 80px;
+    height: 83px;
   }
 }

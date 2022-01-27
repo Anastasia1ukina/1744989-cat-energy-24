@@ -51,7 +51,7 @@
     display: grid;
     grid-template-columns: 247px 250px;
     grid-column-gap: 140px;
-    grid-row-gap: 40px;
+    grid-row-gap: 140px;
   }
 }
 
@@ -85,14 +85,14 @@
 @media (min-width: $tablet-width) {
   .work__wrapper {
     width: 708px;
-    margin: 0 30px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .work__wrapper {
     width: 1220px;
-    margin: 0 110px;
+    margin: 0 auto;
   }
 }
 
@@ -117,7 +117,27 @@
     font-size: 280px;
     line-height: 280px;
     color: #f2f2f2;
-    display: none;
+    z-index: -1;
+
+    &--one {
+      top: -40px;
+      right: 18px;
+    }
+
+    &--two {
+      top: -37px;
+      right: 6px;
+    }
+
+    &--three {
+      top: -38px;
+      right: 0;
+    }
+
+    &--four {
+      top: -40px;
+      right: 0;
+    }
   }
 }
 

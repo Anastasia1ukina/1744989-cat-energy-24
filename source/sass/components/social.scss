@@ -1,7 +1,45 @@
 .social__list {
   display: flex;
   justify-content: space-between;
-  margin: 0;
   padding: 0;
   list-style-type: none;
+  width: 130px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.social__link:hover path {
+  fill: #68b738;
+}
+
+.social__link:active path {
+  fill: #68b738;
+  opacity: 0.3;
+}
+
+.social__link--facebook:hover path {
+  fill: none;
+  stroke: #68b738;
+}
+
+.social__link--facebook:active path {
+  fill: none;
+  stroke: #68b738;
+  opacity: 0.3;
+}
+
+.social__desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .social__desktop {
+    display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__mobile {
+    display: none;
+  }
 }

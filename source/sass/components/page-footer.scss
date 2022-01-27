@@ -23,6 +23,14 @@
   padding-right: 20px;
 }
 
+.page-footer__logo-text:hover {
+  opacity: 0.8;
+}
+
+.page-footer__logo-text:active {
+  opacity: 0.6;
+}
+
 .page-footer__logo-text {
   text-align: center;
   padding-top: 40px;
@@ -50,6 +58,7 @@
 @media (min-width: $tablet-width) {
   .page-footer__social {
     padding: 60px 0;
+    border: none;
   }
 }
 

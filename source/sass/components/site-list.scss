@@ -24,6 +24,32 @@
   }
 }
 
+.site-list__link--active-catalog {
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+.site-list__link--form-not-active {
+  cursor: pointer;
+}
+
+.site-list__link--active-form {
+  cursor: inherit;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .site-list__link {
     font-family: "Oswald", sans-serif;

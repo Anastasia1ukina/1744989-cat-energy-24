@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  min-height: 570px;
+  min-height: 543px;
 
   &--form-catalog {
     min-height: 65px;
@@ -16,11 +16,53 @@
   }
 }
 
-.page-header__logo img {
-  width: 100px;
+.page-header__logo-image {
+  width: 101px;
   height: 18px;
   margin-top: 22px;
   margin-bottom: 22px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+    position: absolute;
+    left: 0;
+    top: -15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.page-header__logo-cat {
+  margin-top: 11px;
+  margin-bottom: 16px;
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -39,7 +81,7 @@
 @media (min-width: $desktop-width) {
   .page-header--desktop {
     height: 696px;
-    background-image: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%), url("../img/background-desktop-cat.jpg"), linear-gradient(to right, #ffffff 50%, #535259 50%);
+    background-image: linear-gradient(to right, #ffffff 50%, #68b738d9 50%), url("../img/jpg/background-desktop-cat.jpg"), linear-gradient(to right, #ffffff 50%, #535259 50%);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;

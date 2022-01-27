@@ -4,7 +4,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  text-align: center;
+  text-align: left;
   color: #444444;
 
   &--exactly {
@@ -19,11 +19,12 @@
 
 .product__card-link {
   text-decoration: none;
+  display: inline-block;
 }
 
 .product__list {
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -31,6 +32,7 @@
   .product__list {
     display: grid;
     grid-template-columns: 384px 384px;
+    max-width: 708px;
   }
 }
 
@@ -38,6 +40,7 @@
   .product__list {
     display: grid;
     grid-template-columns: 325px 325px 325px 395px;
+    max-width: 1220px;
   }
 }
 
@@ -49,10 +52,12 @@
 }
 
 .product__card-button {
-  width: 280px;
+  min-width: 280px;
+  max-width: 767px;
   min-height: 40px;
   text-align: center;
   padding-top: 8px;
+  margin: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -61,7 +66,7 @@
     min-height: 40px;
     text-align: center;
     padding-top: 8px;
-    margin: 0 37px 40px 39px;
+    margin-bottom: 40px;
   }
 }
 
@@ -84,6 +89,7 @@
     min-width: 280px;
     text-align: center;
     margin-bottom: 8px;
+    margin-top: 23px;
   }
 }
 
@@ -92,9 +98,8 @@
     font-size: 20px;
     line-height: 24px;
     min-width: 130px;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
     margin-top: 34px;
-    margin-left: 96px;
   }
 }
 
@@ -102,7 +107,7 @@
   .product__card-title--show-more {
     min-width: 134px;
     margin-top: 0;
-    padding-top: 160px;
+    padding-top: 43px;
   }
 }
 
@@ -110,14 +115,13 @@
   .product__card-title {
     margin-bottom: 20px;
     margin-top: 46px;
-    margin-left: 55px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product__card-title--show-more {
     min-width: 134px;
-    padding-top: 160px;
+    padding-top: 43px;
     margin-top: 0;
   }
 }
@@ -126,7 +130,17 @@
   .product__card-description {
     font-size: 16px;
     line-height: 16px;
-    padding-bottom: 14px;
+    padding-bottom: 10px;
+    padding-top: 7px;
+    text-align: left;
+
+    &--exactly {
+      text-align: right;
+    }
+
+    &--last {
+      text-align: center;
+    }
   }
 }
 
@@ -152,70 +166,83 @@
 
 @media (min-width: $tablet-width) {
   .product__title {
-    padding: 65px 0 80px 30px;
+    padding: 65px 0 80px 0;
+    max-width: 708px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product__title {
-    padding: 65px 0 80px 110px;
+    padding: 65px 0 80px 0;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 
 .product__card {
   border-top: 1px solid #ebebeb;
-  padding: 20px 20px 25px 20px;
-  width: 320px;
+  padding: 20px 0 25px 0;
 
   &--last {
     border-bottom: 1px solid #ebebeb;
+    text-align: center;
   }
 }
 
 @media (min-width: $tablet-width) {
   .product__card {
     border: none;
-    margin: 0 30px 30px 30px;
+    margin: 0 0 68px 0;
     padding: 0;
     text-align: center;
-    background-color: #f2f2f2;
+    background: linear-gradient(180deg, #ffffff 12%, #f2f2f2 12%);
     width: 324px;
-    height: 430px;
+    min-height: 430px;
+
+    &--last {
+      background: #ffffff;
+      border: 2px solid #f2f2f2;
+      margin-top: 52px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .product__card {
     width: 245px;
-    margin: 0 40px 60px 110px;
+
+    &--last {
+      min-height: 430px;
+      height: 430px;
+      margin-top: 60px;
+    }
   }
 }
 
-@media (min-width: $tablet-width) {
-  .product__card--last {
-    background-color: #ffffff;
-    border: 2px solid #f2f2f2;
-  }
+.product__card-svg {
+  width: 60px;
+  height: 60px;
+  margin-top: 52px;
 }
 
 .product__card-wrapper {
   display: flex;
-  justify-content: space-between;
   padding-bottom: 10px;
+  max-width: 280px;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .product__card-wrapper {
     display: block;
-    padding-bottom: 28px;
-    padding-top: 97px;
+    padding-bottom: 33px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product__card-wrapper {
     padding-bottom: 33px;
-    padding-top: 80px;
   }
 }
 
@@ -230,13 +257,18 @@
 @media (min-width: $tablet-width) {
   .product__card-table {
     min-width: 252px;
-    margin-left: 36px;
+    border-collapse: collapse;
+    margin: 0 auto;
+
+    tr {
+      border-bottom: 1px solid #cdcdcd;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .product__card-table {
-    min-width: 180px;
-    margin-left: 35px;
+    min-width: 168px;
+    margin-left: 40px;
   }
 }

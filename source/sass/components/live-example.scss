@@ -1,21 +1,32 @@
 .live-example {
-  background-color: #eaeaea;
+  background: linear-gradient(#eaeaea, #eaeaea);
   margin-top: 40px;
 }
 
 @media (min-width: $tablet-width) {
   .live-example {
-    background-color: #ffffff;
+    background: linear-gradient(#ffffff, #ffffff);
   }
 }
 
 @media (min-width: $desktop-width) {
   .live-example {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 126px;
+    background: linear-gradient(#ffffff 218px, #f2f2f2 218px);
+    position: relative;
+    min-height: 640px;
   }
 }
+
+.live-example__description-and-advantages {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 708px;
+    margin: 0 auto;
+  }
+}
+
 
 .live-example__title {
   font-style: normal;
@@ -27,8 +38,17 @@
 }
 
 .live-example__description {
-  margin: 0;
-  padding: 15px 20px;
+  margin: 0 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+    line-height: 24px;
+    padding: 0 0 60px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -40,33 +60,33 @@
 }
 
 @media (min-width: $desktop-width) {
-  .live-example__title {
-    padding-left: 110px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .live-example__description {
-    min-width: 708px;
-    line-height: 24px;
-    padding: 0 0 60px 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .live-example__description {
-    padding-left: 110px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .live-example__wrapper {
-    margin: 0 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
   .live-example__wrapper {
     margin: 0;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .live-example__wrapper-all {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1220px;
+    margin: 126px auto 0 auto;
+  }
+}
+
+.slider__control::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  width: 41px;
+  height: 12px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  cursor: pointer;
+}
+
+.slider__control--before::before {
+  right: 0;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
 }

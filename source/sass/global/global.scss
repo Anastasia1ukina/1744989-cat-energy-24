@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src:
+    url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
+  font-display: swap;
+}
+
 *,
 *::before,
 *::after {
@@ -84,12 +104,24 @@ p {
   font-size: 16px;
   display: block;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
+
   &--more {
     color: #444444;
     background-color: #f2f2f2;
-  }
 
-  &:hover {
-    background-color: #5eaa2f;
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: #ebebeb;
+    }
   }
 }
