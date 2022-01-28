@@ -125,3 +125,7 @@ p {
     }
   }
 }
+
+svg:not(:root) {
+  overflow: hidden;
+}

@@ -1,14 +1,13 @@
 .promo__descript {
-  background-image: linear-gradient(#68b738d9, #68b738d9), url("../img/jpg/background-cat.jpg");
+  background-image: linear-gradient(#68b738d9, #68b738d9),
+    url("../img/jpg/background-cat.jpg"),
+    linear-gradient(to left, #ffffff 50%, #535259 50%),
+    linear-gradient(to right, #ffffff 50%, #535259 50%);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
   height: 302px;
   text-align: center;
-}
-
-.promo {
-  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -17,6 +16,10 @@
     max-width: 925px;
     margin: 0 auto;
   }
+}
+
+.promo {
+  position: relative;
 }
 
 .promo__title {

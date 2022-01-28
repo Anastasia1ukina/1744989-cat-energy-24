@@ -14,6 +14,26 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .site-list__link {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link {
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+}
+
 .site-list__link--active {
   &:hover {
     opacity: 1;
@@ -24,6 +44,20 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .site-list__link--active {
+    border-bottom: 2px solid #68b738;
+    padding-bottom: 6px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__link--active {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 6px;
+  }
+}
+
 .site-list__link--active-catalog {
   &:hover {
     opacity: 1;
@@ -31,6 +65,13 @@
 
   &:active {
     opacity: 1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__link--active-catalog {
+    border-bottom: 2px solid #68b738;
+    padding-bottom: 6px;
   }
 }
 
@@ -51,22 +92,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .site-list__link {
-    font-family: "Oswald", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #000000;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .site-list__link {
-    font-size: 20px;
-    line-height: 30px;
-    color: #ffffff;
+  .site-list__link--active-form {
+    border-bottom: 2px solid #68b738;
+    padding-bottom: 6px;
   }
 }
 
@@ -113,34 +141,6 @@
 @media (min-width: $tablet-width) {
   .site-list__item {
     border: none;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .site-list__link--active {
-    border-bottom: 2px solid #68b738;
-    padding-bottom: 6px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .site-list__link--active {
-    border-bottom: 2px solid #ffffff;
-    padding-bottom: 6px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .site-list__link--active-form {
-    border-bottom: 2px solid #68b738;
-    padding-bottom: 6px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .site-list__link--active-catalog {
-    border-bottom: 2px solid #68b738;
-    padding-bottom: 6px;
   }
 }
 
