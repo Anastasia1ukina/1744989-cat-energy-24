@@ -1,125 +1,116 @@
-.location__text {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #111111;
-  width: 140px;
-  padding: 25px 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .location__text {
-    font-size: 20px;
-    line-height: 26px;
-    width: 170px;
-    padding: 0;
-  }
-}
-
-.location__address {
-  font-size: 14px;
-  width: 155px;
-  line-height: 20px;
-  padding: 25px 20px 25px 0;
-
-  @media (max-width: $mobile-width-only) {
-    br {
-      display: none;
-    }
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .location__address {
-    font-size: 16px;
-    line-height: 20px;
-    width: 160px;
-    padding: 0;
-    text-align: right;
-  }
-}
-
 .location {
   position: relative;
 }
 
 .location__content {
-  display: flex;
-  justify-content: space-between;
-}
+  display: grid;
+  padding: 26px 20px 25px;
 
-@media (min-width: $tablet-width) {
-  .location__content {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 60px;
-    max-width: 628px;
-    margin: 0 auto;
+  gap: 2px;
+  grid-template-columns: 1fr 1fr;
 
-    &--form {
-      max-width: initial;
-      margin: 0 70px;
-    }
+  @media (min-width: $tablet-width) {
+    padding: 59px 70px 60px;
+    gap: 245px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+
+    width: 565px;
+    padding-right: 80px;
+    padding-left: 80px;
+
+    background: #ffffff;
+
+    gap: 95px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .location__content {
-    width: 565px;
-    position: absolute;
-    bottom: 96px;
-    background: #ffffff;
-    min-height: 200px;
-    padding-left: 80px;
-    padding-right: 80px;
-    margin: 0 110px;
+.location__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.location__address {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.location__address span {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 17px;
   }
 }
 
 .location__wrapper {
-  min-height: 112px;
+  @media (min-width: $desktop-width) {
+    position: relative;
 
-  &--form-catalog {
-    background-color: #f2f2f2;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .location__wrapper {
-    min-height: 200px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .location__wrapper {
-    height: 0;
-    min-height: 0;
-    padding-right: 0;
-  }
-}
-
-
-@media (min-width: $desktop-width) {
-  .location__wrapper--form-catalog {
-    background-color: #ffffff;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 
 .location iframe {
-  border: none;
   display: block;
+  width: 100%;
+
+  border: none;
 }
 
 .location__map {
-  min-width: 320px;
+  width: 100%;
   height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
-@media (min-width: $desktop-width) {
-  .location__map {
-    height: 400px;
+.location--no-js iframe {
+  display: none;
+}
+
+.location--no-js .location__map {
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/map-tablet.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/map-desktop.jpg");
   }
 }

@@ -1,87 +1,80 @@
-.advantages__title {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-}
-
-@media (min-width: $tablet-width) {
-  .advantages__title {
-    font-size: 30px;
-    line-height: 37px;
-  }
-}
-
-.advantages__description {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  color: #444444;
-}
-
-@media (min-width: $tablet-width) {
-  .advantages__description {
-    font-size: 14px;
-    line-height: 14px;
-  }
-}
-
-.advantages__food-costs {
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #000000;
-  min-width: 190px;
-  margin: 0;
-  padding-top: 20px;
-  margin-left: 30px;
-}
-
-@media (min-width: $tablet-width) {
-  .advantages__food-costs {
-    font-size: 20px;
-    width: 174px;
-    text-align: right;
-    padding-top: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .advantages__food-costs {
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-    margin-left: 0;
-    width: 327px;
-    padding-top: 55px;
-  }
-}
-
 .advantages {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   margin: 0 0 40px;
-  background-color: inherit;
-}
 
-@media (min-width: $tablet-width) {
-  .advantages {
+  background-color: inherit;
+
+  @media (min-width: $tablet-width) {
     justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .advantages {
-    margin: 0;
+.advantages__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.advantages__description {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.advantages__food-costs {
+  min-width: 190px;
+  margin: 0;
+  margin-left: 30px;
+  padding-top: 20px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: inherit;
+  color: #000000;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    padding-top: 0;
+
+    font-size: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 327px;
+    margin-left: 0;
+    padding-top: 55px;
+
+    font-size: 20px;
   }
 }
 
 .advantages__wrapper {
   width: calc(50% - 16px);
+
   background-color: inherit;
 
   @media (min-width: $tablet-width) {
@@ -97,6 +90,8 @@
 .advantages__wrapper-costs {
   width: 100%;
   margin-top: 18px;
+
+  font-size: 14px;
   line-height: 20px;
   font-family: "Oswald", "Arial", sans-serif;
   text-align: center;
@@ -105,7 +100,7 @@
 
   dd,
   dt {
-    display: inline;
+    display: inline-block;
     margin: 0;
 
     @media (min-width: $tablet-width) {
@@ -121,6 +116,7 @@
   @media (min-width: $tablet-width) {
     width: 300px;
     margin: 0 0 0 auto;
+
     font-size: 20px;
     text-align: right;
   }

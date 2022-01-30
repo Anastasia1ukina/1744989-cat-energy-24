@@ -1,83 +1,78 @@
 .live-example {
-  background: linear-gradient(#eaeaea, #eaeaea);
-}
+  padding: 28px 20px 44px;
 
-@media (min-width: $tablet-width) {
-  .live-example {
-    background: linear-gradient(#ffffff, #ffffff);
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .live-example {
-    background: linear-gradient(#ffffff 218px, #f2f2f2 218px);
-    position: relative;
-    min-height: 640px;
-  }
-}
-
-.live-example__description-and-advantages {
-  margin-left: 20px;
-  margin-right: 20px;
+  background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    max-width: 708px;
-    margin: 0 auto;
+    padding: 47px 30px 60px;
+
+    background: linear-gradient(to bottom, #ffffff 57.3%, #eaeaea 42.7%);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 69px;
+
+    background: linear-gradient(to bottom, #ffffff 27.3%, #eaeaea 27.3%);
   }
 }
 
+.live-example__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 45px;
+  }
+}
 
 .live-example__title {
-  font-style: normal;
-  font-weight: normal;
+  margin: 0;
+  padding-bottom: 23px;
+
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin: 0;
-  padding: 25px 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .live-example__title {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 44px;
+
     font-size: 60px;
     line-height: 60px;
-    padding: 40px 0 63px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 127px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .live-example__title {
-    font-size: 60px;
-    line-height: 60px;
-    padding: 70px 0 146px 0;
-  }
-}
+.live-example__text {
+  margin-bottom: 20px;
 
-.live-example__description {
-  margin: 0 0 20px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+  color: #444444;
 
   @media (min-width: $tablet-width) {
     width: 678px;
+
+    font-size: 16px;
     line-height: 24px;
-    padding: 0 0 60px 0;
-    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 436px;
+    margin-bottom: 33px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .live-example__wrapper {
-    margin: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .live-example__wrapper-all {
+.live-example__wrapper-all {
+  @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     max-width: 1220px;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
+
+    grid-template-columns: auto auto;
   }
 }

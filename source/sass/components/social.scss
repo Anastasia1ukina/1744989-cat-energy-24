@@ -1,45 +1,82 @@
 .social__list {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
-  list-style-type: none;
-  width: 130px;
-  align-items: center;
+  display: grid;
+  width: 135px;
   margin: 0 auto;
+
+  gap: 29px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    width: 129px;
+    padding-left: 11px;
+
+    gap: 27px;
+  }
 }
 
-.social__link:hover path {
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22px;
+}
+
+.social__link svg {
+  fill: #666666;
+}
+
+.social__link--vkontakte svg {
+  width: 23px;
+  height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.social__link--instagram svg {
+  width: 16px;
+  height: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.social__link--facebook svg {
+  width: 22px;
+  height: 20px;
+
+  fill: none;
+  stroke: #666666;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 27px;
+  }
+}
+
+.social__link:hover svg,
+.social__link:focus svg {
   fill: #68b738;
 }
 
-.social__link:active path {
-  fill: #68b738;
+.social__link:active svg {
   opacity: 0.3;
+
+  fill: #68b738;
 }
 
-.social__link--facebook:hover path {
+.social__link--facebook:hover svg {
   fill: none;
   stroke: #68b738;
 }
 
-.social__link--facebook:active path {
+.social__link--facebook:active svg {
+  opacity: 0.3;
+
   fill: none;
   stroke: #68b738;
-  opacity: 0.3;
-}
-
-.social__desktop {
-  display: none;
-}
-
-@media (min-width: $tablet-width) {
-  .social__desktop {
-    display: block;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .social__mobile {
-    display: none;
-  }
 }

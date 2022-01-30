@@ -1,56 +1,43 @@
 .page-header {
   display: flex;
   flex-direction: column;
+
   background-color: #ffffff;
+}
+
+.page-header--home {
   min-height: 543px;
 
-  &--form-catalog {
-    min-height: 65px;
-    border-bottom: 1px solid #e6e6e6;
+  @media (min-width: $desktop-width) {
+    min-height: 693px;
+
+    background-image: linear-gradient(to right, #ffffff 50%, #68b738d9 50%),
+      url("../img/background-desktop-cat.jpg"),
+      linear-gradient(to right, #ffffff 50%, #535259 50%);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .page-header--form-catalog {
-    border: none;
-  }
-}
-
-.page-header__logo-image {
-  width: 101px;
-  height: 18px;
-  margin-top: 22px;
-  margin-bottom: 22px;
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
+.page-header__logo {
+  display: inline-block;
+  width: 191px;
+  height: 38px;
+  margin-top: 10px;
+  margin-bottom: 13px;
+  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     width: 174px;
     height: 52px;
-    position: absolute;
-    left: 0;
-    top: -15px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 59px;
   }
-}
-
-.page-header__logo-cat {
-  margin-top: 11px;
-  margin-bottom: 16px;
-  position: absolute;
-  left: 20px;
-  cursor: pointer;
 
   &:hover {
     opacity: 0.8;
@@ -59,31 +46,8 @@
   &:active {
     opacity: 0.6;
   }
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
 }
 
-@media (min-width: $tablet-width) {
-  .page-header__logo {
-    width: 170px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header__logo {
-    width: 170px;
-    margin-left: -23px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header--desktop {
-    height: 696px;
-    background-image: linear-gradient(to right, #ffffff 50%, #68b738d9 50%), url("../img/jpg/background-desktop-cat.jpg"), linear-gradient(to right, #ffffff 50%, #535259 50%);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-  }
+.page-header__logo img {
+  width: 100%;
 }
