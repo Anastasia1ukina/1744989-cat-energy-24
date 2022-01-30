@@ -1,21 +1,53 @@
 .page-header {
   display: flex;
   flex-direction: column;
+
   background-color: #ffffff;
 }
 
-@media (min-width: $tablet-width) {
-  .page-header__logo {
-    width: 170px;
+.page-header--home {
+  min-height: 543px;
+
+  @media (min-width: $desktop-width) {
+    min-height: 693px;
+
+    background-image: linear-gradient(to right, #ffffff 50%, #68b738d9 50%),
+      url("../img/background-desktop-cat.jpg"),
+      linear-gradient(to right, #ffffff 50%, #535259 50%);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .page-header--desktop {
-    height: 696px;
-    background-image: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%), url("../img/background-desktop-cat.jpg"), linear-gradient(to right, #ffffff 50%, #535259 50%);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
+.page-header__logo {
+  display: inline-block;
+  width: 191px;
+  height: 38px;
+  margin-top: 10px;
+  margin-bottom: 13px;
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+    margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-header__logo img {
+  width: 100%;
 }

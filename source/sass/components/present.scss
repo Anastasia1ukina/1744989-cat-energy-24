@@ -1,11 +1,72 @@
 .present {
-  background: rgba(104, 183, 56, 0.85), url("/source/img/background-cat.jpg") center/cover;
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 172px 48px 26px;
+
+  text-align: center;
+
+  background-image: url("../img/icon-present.svg"),
+    linear-gradient(#68b738d9, #68b738d9),
+    url("../img/cat-present.jpg");
+  background-repeat: no-repeat;
+  background-position: center 60px, 100%, top;
+  background-size: 79px 80px, cover, cover;
+
+  @media (min-width: $tablet-width) {
+    max-width: 708px;
+    padding: 56px 48px 52px 423px;
+    margin: 0 auto;
+
+    background-image: url("../img/icon-present.svg"),
+      linear-gradient(#68b738d9, #68b738d9),
+      url("../img/cat-present-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: 78px center, 100%, top;
+    background-size: 79px 80px, cover, contain;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin: 0;
+    padding: 170px 42px 0;
+
+    background-image: url("../img/icon-present.svg"),
+      linear-gradient(#68b738d9, #68b738d9),
+      url("../img/cat-present-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center 60px, 100%, top;
+    background-size: 80px 80px, cover, contain;
+  }
 }
 
 .present__text {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
+  line-height: 20px;
+  font-family: "Arial", sans-serif;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 161px;
+
+    line-height: 20px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .present__rectangle {
+    margin: 57px 77px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .present__image {
+    width: 80px;
+    height: 83px;
+  }
 }
