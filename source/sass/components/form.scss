@@ -194,9 +194,9 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    padding: 0;
     max-width: 1220px;
     margin: 0 auto;
+    padding: 0;
 
     grid-row-gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -227,9 +227,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 76px 110px;
-    margin: 0 auto;
     max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 0 76px 110px;
   }
 }
 
@@ -308,12 +308,13 @@
     }
   }
 }
+
 .form__container-contacts {
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
     max-width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -401,9 +402,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
     width: 1220px;
     margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -569,9 +570,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0;
     width: 1220px;
     margin: 0 auto;
+    padding: 0;
   }
 }
 

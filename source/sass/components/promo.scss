@@ -21,12 +21,14 @@
   background-size: cover, contain, cover;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: linear-gradient(#68b738d9, #68b738d9), url("../img/background-cat@2x.jpg"), linear-gradient(#454349 50%, #454349 50%);
+    background-image: linear-gradient(#68b738d9, #68b738d9),
+      url("../img/background-cat@2x.jpg"),
+      linear-gradient(#454349 50%, #454349 50%);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover, contain, cover;
   }
-  
+
   @media (min-width: $tablet-width) {
     padding-top: 43px;
     padding-left: 119px;
@@ -57,6 +59,7 @@
 }
 
 .promo__intro {
+  max-width: 198px;
   margin: 0 auto;
   padding-top: 23px;
 
@@ -67,16 +70,15 @@
   font-family: "Oswald", "Arial", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
-  max-width: 198px;
 
   @media (min-width: $tablet-width) {
+    max-width: 283px;
+    margin: 0;
     padding-top: 40px;
 
     font-size: 20px;
     line-height: 20px;
     color: #000000;
-    margin: 0;
-    max-width: 283px;
   }
 }
 
