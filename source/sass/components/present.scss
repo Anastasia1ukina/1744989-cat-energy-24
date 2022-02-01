@@ -5,17 +5,22 @@
 
   text-align: center;
 
-  background-image: url("../img/icon-present.svg"),
-    linear-gradient(#68b738d9, #68b738d9),
-    url("../img/cat-present.jpg");
+  background-image: url("../img/icon-present.svg"), linear-gradient(#68b738d9, #68b738d9), url("../img/cat-present.jpg");
   background-repeat: no-repeat;
   background-position: center 60px, 100%, top;
   background-size: 79px 80px, cover, cover;
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/icon-present.svg"), linear-gradient(#68b738d9, #68b738d9), url("../img/cat-present@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center 60px, 100%, top;
+    background-size: 79px 80px, cover, cover;
+  }
+
   @media (min-width: $tablet-width) {
     max-width: 708px;
-    padding: 56px 48px 52px 423px;
     margin: 0 auto;
+    padding: 56px 48px 52px 423px;
 
     background-image: url("../img/icon-present.svg"),
       linear-gradient(#68b738d9, #68b738d9),
@@ -23,6 +28,15 @@
     background-repeat: no-repeat;
     background-position: 78px center, 100%, top;
     background-size: 79px 80px, cover, contain;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/icon-present.svg"),
+        linear-gradient(#68b738d9, #68b738d9),
+        url("../img/cat-present-tablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: 78px center, 100%, top;
+      background-size: 79px 80px, cover, contain;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -36,13 +50,22 @@
     background-repeat: no-repeat;
     background-position: center 60px, 100%, top;
     background-size: 80px 80px, cover, contain;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/icon-present.svg"),
+        linear-gradient(#68b738d9, #68b738d9),
+        url("../img/cat-present-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: center 60px, 100%, top;
+      background-size: 80px 80px, cover, contain;
+    }
   }
 }
 
 .present__text {
   font-size: 16px;
   line-height: 20px;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Oswald", sans-serif;
   color: #ffffff;
 
   @media (min-width: $tablet-width) {

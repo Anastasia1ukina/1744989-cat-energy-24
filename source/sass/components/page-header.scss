@@ -17,7 +17,24 @@
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: linear-gradient(to right, #ffffff 50%, #68b738d9 50%),
+        url("../img/background-desktop-cat@2x.jpg"),
+        linear-gradient(to right, #ffffff 50%, #535259 50%);
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+    }
   }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-header__logo img {
+  width: 100%;
 }
 
 .page-header__logo {
@@ -46,8 +63,4 @@
   &:active {
     opacity: 0.6;
   }
-}
-
-.page-header__logo img {
-  width: 100%;
 }

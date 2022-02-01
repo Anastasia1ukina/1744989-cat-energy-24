@@ -1,0 +1,45 @@
+.button {
+  display: block;
+  max-width: 280px;
+  padding: 11px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #68b738;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
+
+  &--more {
+    color: #444444;
+
+    background-color: #f2f2f2;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: #ebebeb;
+    }
+  }
+}
