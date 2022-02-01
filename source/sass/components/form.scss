@@ -18,7 +18,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 20px 110px;
+    padding: 0 0 20px 0;
 
     &--mail {
       padding: 0;
@@ -29,7 +29,7 @@
     }
 
     &--age {
-      padding: 0 0 0 110px;
+      padding: 0;
     }
   }
 }
@@ -77,7 +77,6 @@
   font-size: 16px;
   line-height: 18px;
   font-family: inherit;
-  color: #444444;
   text-transform: uppercase;
 
   border: 1px solid #e7e7e7;
@@ -174,7 +173,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: #222222;
   text-transform: uppercase;
 
@@ -195,7 +194,9 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    padding: 0 110px 0 110px;
+    padding: 0;
+    max-width: 1220px;
+    margin: 0 auto;
 
     grid-row-gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -227,7 +228,8 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 0 76px 110px;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1440px;
   }
 }
 
@@ -311,7 +313,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    margin: 0 110px;
+    margin: 0 auto;
+    max-width: 1220px;
   }
 }
 
@@ -399,7 +402,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px 0 110px;
+    padding: 0;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -507,7 +512,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", "Oswald", sans-serif;
   text-align: center;
   color: #000000;
 
@@ -521,7 +526,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 682px;
+    width: 570px;
 
     text-align: left;
   }
@@ -545,7 +550,7 @@
   @media (min-width: $desktop-width) {
     min-width: 568px;
     height: 200px;
-    margin: 0 110px 0 0;
+    margin: 0;
   }
 }
 
@@ -565,7 +570,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 0 110px;
+    padding: 0;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -593,6 +600,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 
