@@ -15,17 +15,13 @@
 
   text-align: center;
 
-  background-image: linear-gradient(#68b738d9, #68b738d9),
-    url("../img/background-cat.jpg"),
-    linear-gradient(#454349 50%, #454349 50%);
+  background-image: linear-gradient(#68b738d9, #68b738d9), url("../img/background-cat.jpg"), linear-gradient(#454349 50%, #454349 50%);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover, contain, cover;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: linear-gradient(#68b738d9, #68b738d9),
-      url("../img/background-cat@2x.jpg"),
-      linear-gradient(#454349 50%, #454349 50%);
+    background-image: linear-gradient(#68b738d9, #68b738d9), url("../img/background-cat@2x.jpg"), linear-gradient(#454349 50%, #454349 50%);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover, contain, cover;
