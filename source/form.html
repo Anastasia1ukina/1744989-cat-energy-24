@@ -108,7 +108,9 @@
         </div>
 
         <fieldset class="form__fieldset form__fieldset--contact">
-          <h2 class="form__contact"><span>Контактные данные (владельца кота)</span></h2>
+          <div class="form__contact-wrapper">
+          <h2 class="form__contact"><span>Контактные&nbsp;данные (владельца кота)</span></h2>
+        </div>
           <div class="form__container-contacts">
             <div class="form__group form__group--mail">
               <label class="form__label" for="mail">
@@ -136,15 +138,18 @@
         </fieldset>
 
         <fieldset class="form__fieldset form__fieldset--comment">
-          <h2 class="form__contact">Комментарий</h2>
+          <div class="form__contact-wrapper">
+          <h2 class="form__contact"><span>Комментарий</span></h2>
+        </div>
           <div class="form__comment-wrapper">
             <textarea class="form__comment" rows="5" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
 
         <fieldset class="form__fieldset form__fieldset--extra">
-          <h2 class="form__contact">Дополнительно</h2>
-
+          <div class="form__contact-wrapper">
+          <h2 class="form__contact"><span>Дополнительно</span></h2>
+          </div>
           <ul class="form__fieldset-list form__fieldset-list--check list-reset">
             <li class="form__fieldset-item">
               <label class="form__control">

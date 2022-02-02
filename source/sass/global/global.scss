@@ -85,6 +85,11 @@ input::placeholder {
   color: #444444;
 }
 
+input::-moz-placeholder {
+  color: #444444;
+  opacity: 1;
+}
+
 label input:focus + span {
   box-shadow: 0 2px 4px #00000030;
 }
